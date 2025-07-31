@@ -40,7 +40,7 @@ def process_prop_bet_analysis(spark, trigger_message):
             (df_props.firstname == df_players.firstname) &
             (df_props.lastname == df_players.lastname),
             "inner"
-        ).select("player_name", "stat", "line", "personid")
+        ).select("player_name", "stat", "line", "team", "personid")
         
         print(f"🔗 Matched {df_props_with_id.count()} prop bets with players")
         df_props_with_id.show()
@@ -64,11 +64,59 @@ def process_prop_bet_analysis(spark, trigger_message):
         
         print(f"🔄 Found {df_filtered_stats.count()} relevant statistical records")
         
-        # === Step 5: Compute averages (static for 'points' stat_type) ===
+        # === Step 5: Compute averages for each stat type dynamically ===
         print("🧮 Computing player averages...")
-        df_avg = df_filtered_stats.groupBy("personid", "player_name", "stat", "line").agg(
-            avg("points").alias("predicted_value")
-        )
+        
+        # Get all unique stat types in the current prop bets
+        stat_types = [row.stat for row in df_props_with_id.select("stat").distinct().collect()]
+        print(f"📊 Found stat types: {stat_types}")
+        
+        # Process each stat type separately and union results
+        df_avg_list = []
+        
+        for stat_type in stat_types:
+            print(f"📈 Processing {stat_type} averages...")
+            
+            # Filter for this specific stat type
+            df_stat_specific = df_filtered_stats.filter(col("stat") == stat_type)
+            
+            # Calculate average for the corresponding column
+            if stat_type == "points":
+                df_stat_avg = df_stat_specific.groupBy("personid", "player_name", "stat", "line", "team").agg(
+                    avg("points").alias("predicted_value")
+                )
+            elif stat_type == "steals":
+                df_stat_avg = df_stat_specific.groupBy("personid", "player_name", "stat", "line", "team").agg(
+                    avg("steals").alias("predicted_value")
+                )
+            elif stat_type == "assists":
+                df_stat_avg = df_stat_specific.groupBy("personid", "player_name", "stat", "line", "team").agg(
+                    avg("assists").alias("predicted_value")
+                )
+            elif stat_type == "rebounds":
+                df_stat_avg = df_stat_specific.groupBy("personid", "player_name", "stat", "line", "team").agg(
+                    avg("reboundstotal").alias("predicted_value")
+                )
+            elif stat_type == "blocks":
+                df_stat_avg = df_stat_specific.groupBy("personid", "player_name", "stat", "line", "team").agg(
+                    avg("blocks").alias("predicted_value")
+                )
+            elif stat_type == "threes" or stat_type == "3pm":
+                df_stat_avg = df_stat_specific.groupBy("personid", "player_name", "stat", "line", "team").agg(
+                    avg("threepointersmade").alias("predicted_value")
+                )
+            else:
+                print(f"⚠️ Unknown stat type: {stat_type}, defaulting to points")
+                df_stat_avg = df_stat_specific.groupBy("personid", "player_name", "stat", "line", "team").agg(
+                    avg("points").alias("predicted_value")
+                )
+            
+            df_avg_list.append(df_stat_avg)
+        
+        # Union all stat type results
+        df_avg = df_avg_list[0]
+        for df in df_avg_list[1:]:
+            df_avg = df_avg.union(df)
         
         print(f"🧮 Computed averages for {df_avg.count()} player-stat combinations")
         df_avg.show()
@@ -108,7 +156,6 @@ def process_prop_bet_analysis(spark, trigger_message):
         df_final = df_locks_only \
             .withColumnRenamed("stat", "stat_type") \
             .withColumn("game_date", current_date()) \
-            .withColumn("team", lit(None).cast("string")) \
             .withColumn("created_at", current_timestamp()) \
             .select(
                 "personid", "player_name", "stat_type", "line", "game_date",

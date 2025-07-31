@@ -1,7 +1,571 @@
-{"player_name": "LeBron James", "stat": "points", "line": 24.5, "game_date": "2025-07-24", "team": "LAL"}
-{"player_name": "Stephen Curry", "stat": "points", "line": 45.5, "game_date": "2025-07-24", "team": "GSW"}
-{"player_name": "Kevin Durant", "stat": "points", "line": 27.5, "game_date": "2025-07-24", "team": "PHX"}
-{"player_name": "Amen Thompson", "stat": "steals", "line": 1, "game_date": "2025-07-24", "team": "HOU"}
-{"player_name": "Kevin Durant", "stat": "points", "line": 26.5, "game_date": "2025-07-24", "team": "PHX"}
-{"player_name": "Kevin Durant", "stat": "points", "line": 28.5, "game_date": "2025-07-24", "team": "PHX"}
-{"player_name": "Draymond Green", "stat": "points", "line": 10, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "LeBron James", "stat": "points", "line": 28.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Stephen Curry", "stat": "threes", "line": 6.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Kevin Durant", "stat": "points", "line": 30.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Giannis Antetokounmpo", "stat": "rebounds", "line": 11.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Luka Doncic", "stat": "assists", "line": 9.5, "game_date": "2025-07-24", "team": "DAL"}
+{"player_name": "Jayson Tatum", "stat": "points", "line": 26.5, "game_date": "2025-07-24", "team": "BOS"}
+{"player_name": "Joel Embiid", "stat": "blocks", "line": 2.5, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "Nikola Jokic", "stat": "assists", "line": 8.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Jimmy Butler", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Anthony Davis", "stat": "blocks", "line": 2.8, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Kawhi Leonard", "stat": "points", "line": 24.5, "game_date": "2025-07-24", "team": "LAC"}
+{"player_name": "Paul George", "stat": "threes", "line": 3.5, "game_date": "2025-07-24", "team": "LAC"}
+{"player_name": "Damian Lillard", "stat": "assists", "line": 7.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Russell Westbrook", "stat": "rebounds", "line": 7.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Chris Paul", "stat": "assists", "line": 8.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Devin Booker", "stat": "points", "line": 27.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Trae Young", "stat": "assists", "line": 10.5, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Ja Morant", "stat": "points", "line": 25.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Zion Williamson", "stat": "points", "line": 26.5, "game_date": "2025-07-24", "team": "NOP"}
+{"player_name": "Brandon Ingram", "stat": "assists", "line": 5.5, "game_date": "2025-07-24", "team": "NOP"}
+{"player_name": "Donovan Mitchell", "stat": "points", "line": 24.5, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Rudy Gobert", "stat": "blocks", "line": 2.2, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Karl-Anthony Towns", "stat": "rebounds", "line": 9.5, "game_date": "2025-07-24", "team": "NYK"}
+{"player_name": "Draymond Green", "stat": "assists", "line": 6.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Klay Thompson", "stat": "threes", "line": 4.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "James Harden", "stat": "assists", "line": 8.5, "game_date": "2025-07-24", "team": "LAC"}
+{"player_name": "Kyrie Irving", "stat": "points", "line": 26.5, "game_date": "2025-07-24", "team": "DAL"}
+{"player_name": "Ben Simmons", "stat": "assists", "line": 6.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Tobias Harris", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Al Horford", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "BOS"}
+{"player_name": "Marcus Smart", "stat": "steals", "line": 1.8, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Robert Williams III", "stat": "blocks", "line": 2.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Jaylen Brown", "stat": "points", "line": 25.5, "game_date": "2025-07-24", "team": "BOS"}
+{"player_name": "Tyler Herro", "stat": "threes", "line": 3.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Bam Adebayo", "stat": "rebounds", "line": 9.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Kyle Lowry", "stat": "assists", "line": 5.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Duncan Robinson", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Victor Oladipo", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Goran Dragic", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Andre Iguodala", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Darius Garland", "stat": "assists", "line": 7.5, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Jarrett Allen", "stat": "rebounds", "line": 10.5, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Evan Mobley", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Kevin Love", "stat": "rebounds", "line": 7.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Caris LeVert", "stat": "points", "line": 18.5, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Collin Sexton", "stat": "points", "line": 20.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Isaac Okoro", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Dean Wade", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Lauri Markkanen", "stat": "points", "line": 24.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Cedi Osman", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Scottie Barnes", "stat": "rebounds", "line": 7.5, "game_date": "2025-07-24", "team": "TOR"}
+{"player_name": "Pascal Siakam", "stat": "points", "line": 22.5, "game_date": "2025-07-24", "team": "IND"}
+{"player_name": "Fred VanVleet", "stat": "assists", "line": 6.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "OG Anunoby", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "NYK"}
+{"player_name": "Gary Trent Jr", "stat": "threes", "line": 2.8, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Precious Achiuwa", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "NYK"}
+{"player_name": "Chris Boucher", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "TOR"}
+{"player_name": "Thaddeus Young", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Malachi Flynn", "stat": "assists", "line": 2.5, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Dalano Banton", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Julius Randle", "stat": "rebounds", "line": 9.5, "game_date": "2025-07-24", "team": "NYK"}
+{"player_name": "RJ Barrett", "stat": "points", "line": 20.5, "game_date": "2025-07-24", "team": "TOR"}
+{"player_name": "Mitchell Robinson", "stat": "blocks", "line": 2.2, "game_date": "2025-07-24", "team": "NYK"}
+{"player_name": "Jalen Brunson", "stat": "assists", "line": 6.8, "game_date": "2025-07-24", "team": "NYK"}
+{"player_name": "Immanuel Quickley", "stat": "points", "line": 15.5, "game_date": "2025-07-24", "team": "TOR"}
+{"player_name": "Obi Toppin", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "IND"}
+{"player_name": "Derrick Rose", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Alec Burks", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "NYK"}
+{"player_name": "Nerlens Noel", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Taj Gibson", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Tyrese Haliburton", "stat": "assists", "line": 10.5, "game_date": "2025-07-24", "team": "IND"}
+{"player_name": "Buddy Hield", "stat": "threes", "line": 3.5, "game_date": "2025-07-24", "team": "IND"}
+{"player_name": "Myles Turner", "stat": "blocks", "line": 2.8, "game_date": "2025-07-24", "team": "IND"}
+{"player_name": "Malcolm Brogdon", "stat": "assists", "line": 5.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "TJ McConnell", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "IND"}
+{"player_name": "Domantas Sabonis", "stat": "rebounds", "line": 12.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Richaun Holmes", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Harrison Barnes", "stat": "points", "line": 16.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Chimezie Metu", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Maurice Harkless", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Anfernee Simons", "stat": "points", "line": 22.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "CJ McCollum", "stat": "threes", "line": 3.2, "game_date": "2025-07-24", "team": "NOP"}
+{"player_name": "Norman Powell", "stat": "points", "line": 17.5, "game_date": "2025-07-24", "team": "LAC"}
+{"player_name": "Robert Covington", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "LAC"}
+{"player_name": "Jusuf Nurkic", "stat": "rebounds", "line": 10.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Larry Nance Jr", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "NOP"}
+{"player_name": "Tony Snell", "stat": "threes", "line": 1.5, "game_date": "2025-07-24", "team": "NOP"}
+{"player_name": "Cody Zeller", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "NOP"}
+{"player_name": "Trendon Watford", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "De'Aaron Fox", "stat": "points", "line": 25.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Terence Davis", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Davion Mitchell", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Tristan Thompson", "stat": "rebounds", "line": 7.5, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Alex Len", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Shai Gilgeous-Alexander", "stat": "points", "line": 30.5, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Josh Giddey", "stat": "assists", "line": 6.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Luguentz Dort", "stat": "steals", "line": 1.8, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Chet Holmgren", "stat": "blocks", "line": 2.5, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Jalen Williams", "stat": "points", "line": 18.5, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Isaiah Joe", "stat": "threes", "line": 2.8, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Kenrich Williams", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Mike Muscala", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Ousmane Dieng", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Tre Mann", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Jeremiah Robinson-Earl", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Lindy Waters III", "stat": "threes", "line": 1.5, "game_date": "2025-07-24", "team": "OKC"}
+
+
+
+
+// 200
+
+
+
+
+
+{"player_name": "Alperen Sengun", "stat": "assists", "line": 5.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Jalen Green", "stat": "points", "line": 22.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Jabari Smith Jr", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Amen Thompson", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Cam Whitmore", "stat": "points", "line": 15.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Tari Eason", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Steven Adams", "stat": "rebounds", "line": 9.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Dillon Brooks", "stat": "points", "line": 16.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Aaron Holiday", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Jock Landale", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Victor Wembanyama", "stat": "blocks", "line": 3.8, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Devin Vassell", "stat": "points", "line": 19.5, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Jeremy Sochan", "stat": "rebounds", "line": 7.5, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Tre Jones", "stat": "assists", "line": 6.5, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Keldon Johnson", "stat": "points", "line": 17.5, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Zach Collins", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Doug McDermott", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Devonte Graham", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Jakob Poeltl", "stat": "rebounds", "line": 8.5, "game_date": "2025-07-24", "team": "TOR"}
+{"player_name": "Malaki Branham", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Paolo Banchero", "stat": "points", "line": 23.5, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Franz Wagner", "stat": "assists", "line": 4.8, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Wendell Carter Jr", "stat": "rebounds", "line": 9.5, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Jalen Suggs", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Cole Anthony", "stat": "assists", "line": 5.5, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Markelle Fultz", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Jonathan Isaac", "stat": "blocks", "line": 2.2, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Gary Harris", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Moritz Wagner", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Chuma Okeke", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Cade Cunningham", "stat": "assists", "line": 7.8, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Isaiah Stewart", "stat": "rebounds", "line": 8.5, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Jalen Duren", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Ausar Thompson", "stat": "steals", "line": 1.8, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Isaiah Livers", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Jadian McDaniels", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Killian Hayes", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Marcus Sasser", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "James Wiseman", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Mike Conley", "stat": "assists", "line": 5.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Jaden McDaniels", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Anthony Edwards", "stat": "points", "line": 26.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Naz Reid", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Nickeil Alexander-Walker", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Kyle Anderson", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Jordan McLaughlin", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Shake Milton", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Luka Garza", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Leonard Miller", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Mikal Bridges", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "NYK"}
+{"player_name": "Cam Johnson", "stat": "threes", "line": 3.2, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Nic Claxton", "stat": "blocks", "line": 2.2, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Spencer Dinwiddie", "stat": "assists", "line": 5.5, "game_date": "2025-07-24", "team": "DAL"}
+{"player_name": "Dorian Finney-Smith", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Royce O'Neale", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Dennis Smith Jr", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Day'Ron Sharpe", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Cam Thomas", "stat": "points", "line": 18.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Lonnie Walker IV", "stat": "points", "line": 15.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Patty Mills", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Edmond Sumner", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Kessler Edwards", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "LaMarcus Aldridge", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Blake Griffin", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "BOS"}
+{"player_name": "Paul Millsap", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "DeAndre Jordan", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Carmelo Anthony", "stat": "points", "line": 15.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Dwight Howard", "stat": "rebounds", "line": 7.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Rajon Rondo", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Isaiah Thomas", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "DeMarcus Cousins", "stat": "rebounds", "line": 8.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "JJ Redick", "stat": "threes", "line": 2.8, "game_date": "2025-07-24", "team": "NOP"}
+{"player_name": "Avery Bradley", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Trevor Ariza", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Wayne Ellington", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Kent Bazemore", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Malik Monk", "stat": "points", "line": 16.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Kendrick Nunn", "stat": "points", "line": 14.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Austin Reaves", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Stanley Johnson", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Talen Horton-Tucker", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Frank Vogel", "stat": "assists", "line": 0.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Max Christie", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Scottie Pippen Jr", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Cole Swider", "stat": "threes", "line": 1.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Jay Huff", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Paris Bass", "stat": "rebounds", "line": 2.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Shareef O'Neal", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Chaundee Brown", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Mac McClung", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "Andrew Wiggins", "stat": "points", "line": 17.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Jordan Poole", "stat": "points", "line": 18.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Moses Moody", "stat": "threes", "line": 1.8, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Jonathan Kuminga", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "James Wiseman", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Kevon Looney", "stat": "rebounds", "line": 8.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Gary Payton II", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Otto Porter Jr", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "TOR"}
+{"player_name": "Nemanja Bjelica", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Juan Toscano-Anderson", "stat": "assists", "line": 2.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Chris Chiozza", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Quinndary Weatherspoon", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Ryan Rollins", "stat": "assists", "line": 2.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Patrick Baldwin Jr", "stat": "threes", "line": 1.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Lester Quinones", "stat": "points", "line": 6.5, "game_date": "2025-07-24", "team": "GSW"}
+{"player_name": "Jerome Robinson", "stat": "assists", "line": 2.5, "game_date": "2025-07-24", "team": "GSW"}
+
+
+
+// 300  
+
+
+
+
+{"player_name": "Tyrese Maxey", "stat": "points", "line": 23.5, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "De'Anthony Melton", "stat": "steals", "line": 1.4, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "Paul Reed", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "Georges Niang", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Shake Milton", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Furkan Korkmaz", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "IND"}
+{"player_name": "Montrezl Harrell", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "Danny Green", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Matisse Thybulle", "stat": "steals", "line": 1.8, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Isaiah Joe", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Charlie Brown Jr", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "Jaden Springer", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "Filip Petrusev", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "Julian Champagnie", "stat": "threes", "line": 1.8, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Michael Foster Jr", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "Bradley Beal", "stat": "points", "line": 25.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Kyle Kuzma", "stat": "rebounds", "line": 7.8, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Kristaps Porzingis", "stat": "blocks", "line": 2.2, "game_date": "2025-07-24", "team": "BOS"}
+{"player_name": "Monte Morris", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Corey Kispert", "stat": "threes", "line": 2.8, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Daniel Gafford", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "DAL"}
+{"player_name": "Deni Avdija", "stat": "assists", "line": 4.2, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Rui Hachimura", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Will Barton", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Ish Smith", "stat": "assists", "line": 3.8, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Anthony Gill", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Johnny Davis", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Delon Wright", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Vernon Carey Jr", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Devon Dotson", "stat": "assists", "line": 2.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Jaime Jaquez Jr", "stat": "points", "line": 11.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Jordan Goodwin", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Eugene Omoruyi", "stat": "rebounds", "line": 3.8, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Quenton Jackson", "stat": "assists", "line": 2.2, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Jules Bernard", "stat": "points", "line": 6.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "LaMelo Ball", "stat": "assists", "line": 8.5, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Terry Rozier", "stat": "points", "line": 20.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Gordon Hayward", "stat": "assists", "line": 4.2, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Miles Bridges", "stat": "rebounds", "line": 7.5, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "PJ Washington", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "DAL"}
+{"player_name": "Mason Plumlee", "stat": "assists", "line": 3.8, "game_date": "2025-07-24", "team": "LAC"}
+{"player_name": "Kelly Oubre Jr", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "PHI"}
+{"player_name": "Ish Smith", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Nick Richards", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Cody Martin", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Jalen McDaniels", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "TOR"}
+{"player_name": "Dennis Smith Jr", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "JT Thor", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Kai Jones", "stat": "rebounds", "line": 4.8, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "James Bouknight", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Scottie Lewis", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Bryce McGowens", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Mark Williams", "stat": "blocks", "line": 2.2, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Caleb Houstan", "stat": "threes", "line": 1.5, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Dalen Terry", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Marko Simonovic", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "DeMar DeRozan", "stat": "points", "line": 25.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Zach LaVine", "stat": "threes", "line": 3.2, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Nikola Vucevic", "stat": "rebounds", "line": 11.2, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Coby White", "stat": "assists", "line": 4.8, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Ayo Dosunmu", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Patrick Williams", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Alex Caruso", "stat": "steals", "line": 1.8, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Javonte Green", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Goran Dragic", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Tony Bradley", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Matt Thomas", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Malcolm Hill", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Tyler Cook", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Kostas Antetokounmpo", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Marques Bolden", "stat": "rebounds", "line": 3.8, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Devon Dotson", "stat": "points", "line": 6.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Carlik Jones", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Ethan Thompson", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Jaylen Clark", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Henri Drell", "stat": "points", "line": 5.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Adama Sanogo", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Sandro Mamukelashvili", "stat": "rebounds", "line": 4.8, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Bol Bol", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Frank Kaminsky", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Bismack Biyombo", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Damion Lee", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Torrey Craig", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Jock Landale", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Josh Okogie", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Ish Wainright", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Duane Washington Jr", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Paris Bass", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Theo Pinson", "stat": "assists", "line": 2.8, "game_date": "2025-07-24", "team": "DAL"}
+{"player_name": "Jalen Lecque", "stat": "points", "line": 6.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Gabriel Lundberg", "stat": "assists", "line": 2.2, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Keita Bates-Diop", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Udoka Azubuike", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Chandler Hutchison", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Ty-Shon Alexander", "stat": "threes", "line": 1.8, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Langston Galloway", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Frank Jackson", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Elfrid Payton", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "NOP"}
+{"player_name": "Abdel Nader", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Cameron Johnson", "stat": "threes", "line": 3.2, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Landry Shamet", "stat": "threes", "line": 2.8, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Aaron Holiday", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Torrey Craig", "stat": "rebounds", "line": 4.8, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Jae Crowder", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Cameron Payne", "stat": "assists", "line": 4.2, "game_date": "2025-07-24", "team": "MIL"}
+
+
+// 400
+
+
+{"player_name": "Brook Lopez", "stat": "blocks", "line": 2.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Khris Middleton", "stat": "assists", "line": 5.8, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Bobby Portis", "stat": "rebounds", "line": 8.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Pat Connaughton", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Grayson Allen", "stat": "points", "line": 14.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Wesley Matthews", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "George Hill", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Serge Ibaka", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Jordan Nwora", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "IND"}
+{"player_name": "Thanasis Antetokounmpo", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "MarJon Beauchamp", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "AJ Green", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Jevon Carter", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Sandro Mamukelashvili", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "SAS"}
+{"player_name": "Lindell Wigginton", "stat": "assists", "line": 3.2, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Hugo Besson", "stat": "points", "line": 6.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Luca Vildoza", "stat": "assists", "line": 2.8, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Tyler Herro", "stat": "points", "line": 20.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Duncan Robinson", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Max Strus", "stat": "threes", "line": 3.2, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Gabe Vincent", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Caleb Martin", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Haywood Highsmith", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Nikola Jovic", "stat": "assists", "line": 3.8, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Omer Yurtseven", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Dru Smith", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Jamal Cain", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Orlando Robinson", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Mychal Mulder", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Jamaree Bouyea", "stat": "assists", "line": 2.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Dereon Seabron", "stat": "points", "line": 6.5, "game_date": "2025-07-24", "team": "NOP"}
+{"player_name": "Scotty Hopson", "stat": "rebounds", "line": 3.2, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Cole Swider", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Jericho Sims", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "NYK"}
+{"player_name": "Josh Christopher", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Admiral Schofield", "stat": "rebounds", "line": 3.8, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Zavier Simpson", "stat": "assists", "line": 2.2, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Matt Ryan", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Vince Williams Jr", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Kennedy Chandler", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Jake LaRavia", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "David Roddy", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Ziaire Williams", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Santi Aldama", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "John Konchar", "stat": "assists", "line": 3.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Brandon Clarke", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Tyus Jones", "stat": "assists", "line": 6.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Xavier Tillman", "stat": "rebounds", "line": 4.8, "game_date": "2025-07-24", "team": "BOS"}
+{"player_name": "Luke Kennard", "stat": "threes", "line": 3.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Danny Green", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Yuta Watanabe", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Shaq Buchanan", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Timmy Allen", "stat": "rebounds", "line": 3.2, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Ahmad Caver", "stat": "assists", "line": 2.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Tayshaun Prince", "stat": "points", "line": 6.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Jarrett Culver", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Killian Tillie", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Sean McDermott", "stat": "threes", "line": 1.8, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Clint Capela", "stat": "rebounds", "line": 11.5, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Dejounte Murray", "stat": "steals", "line": 1.8, "game_date": "2025-07-24", "team": "NOP"}
+{"player_name": "John Collins", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Bogdan Bogdanovic", "stat": "threes", "line": 3.5, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "De'Andre Hunter", "stat": "points", "line": 16.5, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Onyeka Okongwu", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Aaron Holiday", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Jalen Johnson", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "AJ Griffin", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Justin Holiday", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Frank Kaminsky", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Garrison Mathews", "stat": "threes", "line": 2.8, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Trent Forrest", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Jarrett Culver", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Vit Krejci", "stat": "assists", "line": 2.8, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Tyrese Martin", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Donovan Williams", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Chaundee Brown", "stat": "rebounds", "line": 3.2, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Malcolm Cazalon", "stat": "points", "line": 6.5, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Collin Gillespie", "stat": "assists", "line": 2.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Jarkel Joiner", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Miles Norris", "stat": "rebounds", "line": 2.8, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Christian Brown", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Peyton Watson", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Aaron Gordon", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Michael Porter Jr", "stat": "threes", "line": 3.2, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Kentavious Caldwell-Pope", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Jamal Murray", "stat": "assists", "line": 6.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Bruce Brown", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "IND"}
+{"player_name": "Jeff Green", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Bones Hyland", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "LAC"}
+{"player_name": "Zeke Nnaji", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Davon Reed", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Collin Gillespie", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Jack White", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Braxton Key", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Hunter Tyson", "stat": "threes", "line": 1.8, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Jalen Pickett", "stat": "assists", "line": 2.8, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Julian Strawther", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Reggie Jackson", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "DEN"}
+{"player_name": "Thomas Bryant", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "MIA"}
+{"player_name": "Rui Hachimura", "stat": "points", "line": 14.5, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Christian Wood", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "D'Angelo Russell", "stat": "assists", "line": 6.2, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Lonnie Walker IV", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Troy Brown Jr", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Juan Toscano-Anderson", "stat": "rebounds", "line": 3.8, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Wenyen Gabriel", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "LAL"}
+{"player_name": "Dennis Schroder", "stat": "assists", "line": 5.5, "game_date": "2025-07-24", "team": "TOR"}
+{"player_name": "Mo Bamba", "stat": "blocks", "line": 2.2, "game_date": "2025-07-24", "team": "LAL"}
+
+
+
+
+//  500
+
+{"player_name": "Scottie Pippen Jr", "stat": "assists", "line": 4.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Jaren Jackson Jr", "stat": "points", "line": 18.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Desmond Bane", "stat": "points", "line": 22.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Marcus Smart", "stat": "assists", "line": 6.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Steven Adams", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Luke Kennard", "stat": "points", "line": 14.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Xavier Tillman", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "BOS"}
+{"player_name": "Ziaire Williams", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "John Konchar", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Santi Aldama", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Brandon Clarke", "stat": "rebounds", "line": 5.8, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Tyus Jones", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Jake LaRavia", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "David Roddy", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Kennedy Chandler", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Vince Williams Jr", "stat": "rebounds", "line": 3.8, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Danny Green", "stat": "assists", "line": 2.5, "game_date": "2025-07-24", "team": "CLE"}
+{"player_name": "Yuta Watanabe", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Shaq Buchanan", "stat": "points", "line": 6.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Timmy Allen", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Ahmad Caver", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Tayshaun Prince", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Jarrett Culver", "stat": "assists", "line": 3.2, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Killian Tillie", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "Sean McDermott", "stat": "points", "line": 6.5, "game_date": "2025-07-24", "team": "MEM"}
+{"player_name": "CJ Elleby", "stat": "rebounds", "line": 3.2, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Shaedon Sharpe", "stat": "points", "line": 16.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Jerami Grant", "stat": "points", "line": 20.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Damian Lillard", "stat": "points", "line": 29.5, "game_date": "2025-07-24", "team": "MIL"}
+{"player_name": "Jusuf Nurkic", "stat": "assists", "line": 4.2, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Drew Eubanks", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Keon Johnson", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Trendon Watford", "stat": "rebounds", "line": 4.8, "game_date": "2025-07-24", "team": "BKN"}
+{"player_name": "Jabari Walker", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Ryan Arcidiacono", "stat": "assists", "line": 2.8, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Olivier Sarr", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "OKC"}
+{"player_name": "Ibou Badji", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "John Butler Jr", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Rayan Rupert", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Duop Reath", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Toumani Camara", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Taze Moore", "stat": "assists", "line": 2.5, "game_date": "2025-07-24", "team": "HOU"}
+{"player_name": "Moses Brown", "stat": "rebounds", "line": 6.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Bryce McGowens", "stat": "rebounds", "line": 3.8, "game_date": "2025-07-24", "team": "CHA"}
+{"player_name": "Kris Murray", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Jordan Walker", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Skylar Mays", "stat": "assists", "line": 3.2, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "George Conditt IV", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Justin Minaya", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Keegan Murray", "stat": "points", "line": 15.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Davion Mitchell", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Trey Lyles", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Kevin Huerter", "stat": "threes", "line": 3.2, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Malik Monk", "stat": "assists", "line": 5.2, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Terence Davis", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Alex Len", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Chimezie Metu", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "KZ Okpala", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Neemias Queta", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "BOS"}
+{"player_name": "Matthew Dellavedova", "stat": "assists", "line": 3.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Kessler Edwards", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Jordan Ford", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Colby Jones", "stat": "assists", "line": 2.8, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Jalen Slawson", "stat": "rebounds", "line": 3.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Jordan McLaughlin", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Keon Ellis", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Mason Jones", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "SAC"}
+{"player_name": "Skal Labissiere", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Jordan Clarkson", "stat": "points", "line": 18.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Walker Kessler", "stat": "rebounds", "line": 8.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Keyonte George", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Taylor Hendricks", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Simone Fontecchio", "stat": "threes", "line": 2.8, "game_date": "2025-07-24", "team": "DET"}
+{"player_name": "Ochai Agbaji", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "TOR"}
+{"player_name": "Brice Sensabaugh", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Kira Lewis Jr", "stat": "assists", "line": 3.8, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Luka Samanic", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Johnny Juzang", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Micah Potter", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Jason Preston", "stat": "assists", "line": 2.8, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Romeo Langford", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Darius Bazley", "stat": "rebounds", "line": 4.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Jared Butler", "stat": "points", "line": 8.5, "game_date": "2025-07-24", "team": "WAS"}
+{"player_name": "Omer Yurtseven", "stat": "blocks", "line": 1.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Kenneth Lofton Jr", "stat": "rebounds", "line": 5.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Taevion Kinsey", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Ben McLemore", "stat": "threes", "line": 2.5, "game_date": "2025-07-24", "team": "POR"}
+{"player_name": "Norvel Pelle", "stat": "blocks", "line": 1.8, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Tony Bradley", "stat": "assists", "line": 2.2, "game_date": "2025-07-24", "team": "CHI"}
+{"player_name": "Udoka Azubuike", "stat": "rebounds", "line": 4.8, "game_date": "2025-07-24", "team": "PHX"}
+{"player_name": "Hassan Whiteside", "stat": "blocks", "line": 2.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Eric Paschall", "stat": "points", "line": 10.5, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Rudy Gay", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Danuel House Jr", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "UTA"}
+{"player_name": "Trent Forrest", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "ATL"}
+{"player_name": "Joe Ingles", "stat": "assists", "line": 4.5, "game_date": "2025-07-24", "team": "ORL"}
+{"player_name": "Bojan Bogdanovic", "stat": "points", "line": 18.5, "game_date": "2025-07-24", "team": "NYK"}
+{"player_name": "Mike Conley", "stat": "threes", "line": 2.8, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Nickeil Alexander-Walker", "stat": "points", "line": 12.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Jaden McDaniels", "stat": "steals", "line": 1.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Kyle Anderson", "stat": "steals", "line": 1.2, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Naz Reid", "stat": "points", "line": 14.5, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Jordan McLaughlin", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Shake Milton", "stat": "threes", "line": 2.2, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Luka Garza", "stat": "blocks", "line": 1.2, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Leonard Miller", "stat": "steals", "line": 1.0, "game_date": "2025-07-24", "team": "MIN"}
+{"player_name": "Troy Brown Jr", "stat": "rebounds", "line": 4.2, "game_date": "2025-07-24", "team": "MIN"}
+
+
+
+
+
+// 600
+
+
+
+
