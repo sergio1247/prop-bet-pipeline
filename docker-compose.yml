@@ -56,15 +56,37 @@ services:
         /opt/bitnami/scripts/spark/entrypoint.sh /opt/bitnami/scripts/spark/run.sh &
         sleep 30 &&
         cd /app &&
-        spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.2 --driver-class-path /app/postgresql-42.7.3.jar --jars /app/postgresql-42.7.3.jar prop_bet_streaming_job.py > /tmp/spark_streaming.log 2>&1 &
+        spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.2 --driver-class-path /app/postgresql-42.7.3.jar --jars /app/postgresql-42.7.3.jar simple_streaming_job.py > /tmp/spark_streaming.log 2>&1 &
         wait
       "
     networks:
       - pipeline_net
 
-  spark_worker:
+  spark_worker_1:
     image: bitnami/spark:3.3.2
-    container_name: spark-worker
+    container_name: spark-worker-1
+    depends_on:
+      - spark_master
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+    networks:
+      - pipeline_net
+
+  spark_worker_2:
+    image: bitnami/spark:3.3.2
+    container_name: spark-worker-2
+    depends_on:
+      - spark_master
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+    networks:
+      - pipeline_net
+
+  spark_worker_3:
+    image: bitnami/spark:3.3.2
+    container_name: spark-worker-3
     depends_on:
       - spark_master
     environment:

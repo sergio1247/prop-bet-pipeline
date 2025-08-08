@@ -20,7 +20,7 @@ with DAG(
     # Send message to Kafka topic via REST API
     send_kafka_message_task = BashOperator(
         task_id='send_spark_trigger',
-        bash_command='curl -X POST http://kafka-rest:8082/topics/spark-jobs -H "Content-Type: application/vnd.kafka.json.v2+json" -d \'{"records":[{"value":{"job_type": "prop_bet_analysis", "timestamp": "'"$(date -u +%Y-%m-%dT%H:%M:%SZ)"'"}}]}\''
+        bash_command='''TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ); curl -X POST http://kafka-rest:8082/topics/spark-jobs -H "Content-Type: application/vnd.kafka.json.v2+json" -d '{"records":[{"value":{"job_type": "prop_bet_analysis", "timestamp": "'$TIMESTAMP'"}}]}' '''
     )
 
     # Just send Kafka message - Spark will process it automatically when it runs

@@ -204,6 +204,16 @@
         .deviation {
             font-weight: bold;
             color: #4ecdc4;
+            font-size: 1.1rem;
+        }
+
+        .team-badge {
+            background: rgba(78, 205, 196, 0.3);
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #4ecdc4;
         }
 
         .no-locks {
@@ -231,6 +241,62 @@
             to { transform: rotate(360deg); }
         }
 
+        .metrics-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            border: 2px solid #4ecdc4;
+        }
+
+        .metrics-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .metrics-header h3 {
+            color: #4ecdc4;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .metrics-timestamp {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .metric-item {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(78, 205, 196, 0.3);
+        }
+
+        .metric-label {
+            display: block;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 5px;
+        }
+
+        .metric-value {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #4ecdc4;
+        }
+
         .footer {
             text-align: center;
             margin-top: 40px;
@@ -248,13 +314,35 @@
                 align-items: center;
             }
             
+            .metrics-grid {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 10px;
+            }
+            
+            .metric-item {
+                padding: 10px;
+            }
+            
+            .metric-label {
+                font-size: 0.8rem;
+            }
+            
+            .metric-value {
+                font-size: 1.1rem;
+            }
+            
             .locks-table {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
             }
             
             .locks-table th,
             .locks-table td {
-                padding: 10px 8px;
+                padding: 8px 6px;
+            }
+            
+            .team-badge {
+                font-size: 0.7rem;
+                padding: 2px 6px;
             }
         }
     </style>
@@ -262,24 +350,54 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🔥 Today's Locks</h1>
-            <p>Auto-updated daily at midnight - High-confidence prop bet picks</p>
+            <h1>🔥 Today's Prop Predictions</h1>
+            <p>Auto-updated daily at midnight - AI-powered prop bet analysis with Monte Carlo simulations</p>
         </div>
 
         <!-- Daily analysis runs automatically at midnight -->
 
         <div id="status" class="status" style="display: none;"></div>
 
+        <!-- Processing Metrics Box -->
+        <div id="metricsContainer" class="metrics-container" style="display: none;">
+            <div class="metrics-header">
+                <h3>🚀 Latest Processing Metrics</h3>
+                <div class="metrics-timestamp" id="metricsTimestamp"></div>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="metric-label">Monte Carlo Time</span>
+                    <span class="metric-value" id="monteCarloTime">--</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Total Processing Time</span>
+                    <span class="metric-value" id="totalProcessingTime">--</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Predictions Generated</span>
+                    <span class="metric-value" id="totalPredictions">--</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Monte Carlo Simulations</span>
+                    <span class="metric-value" id="totalSimulations">--</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Throughput</span>
+                    <span class="metric-value" id="throughput">--</span>
+                </div>
+            </div>
+        </div>
+
         <div class="locks-container">
             <div class="locks-header">
-                <h2 class="locks-title">🎯 Today's Best Picks</h2>
-                <div id="locksCount" class="locks-count">0 Locks</div>
+                <h2 class="locks-title">🎯 Predictions (Sorted by Deviation)</h2>
+                <div id="locksCount" class="locks-count">0 Predictions</div>
             </div>
 
             <div id="locksContent">
                 <div class="no-locks">
-                    <h3>No locks available</h3>
-                    <p>Click "Generate Today's Locks" to analyze today's prop bets</p>
+                    <h3>No predictions available</h3>
+                    <p>Analysis runs automatically at midnight - check back later</p>
                 </div>
             </div>
         </div>
@@ -305,8 +423,42 @@
             }
         }
 
+        async function loadMetrics() {
+            try {
+                const response = await fetch('/get_metrics');
+                const result = await response.json();
+
+                if (result.success && result.metrics) {
+                    displayMetrics(result.metrics);
+                    document.getElementById('metricsContainer').style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error loading metrics:', error);
+            }
+        }
+
+        function displayMetrics(metrics) {
+            document.getElementById('monteCarloTime').textContent = 
+                metrics.monte_carlo_seconds > 0 ? `${metrics.monte_carlo_seconds}s` : 'N/A';
+            
+            document.getElementById('totalProcessingTime').textContent = 
+                metrics.total_processing_seconds > 0 ? `${metrics.total_processing_seconds}s` : 'N/A';
+            
+            document.getElementById('totalPredictions').textContent = 
+                metrics.total_predictions || '--';
+            
+            document.getElementById('totalSimulations').textContent = 
+                metrics.monte_carlo_simulations ? `${metrics.monte_carlo_simulations.toLocaleString()}` : '--';
+            
+            document.getElementById('throughput').textContent = 
+                metrics.throughput > 0 ? `${metrics.throughput.toLocaleString()} sims/sec` : '--';
+            
+            document.getElementById('metricsTimestamp').textContent = 
+                metrics.last_run_time ? `Last run: ${metrics.last_run_time}` : '';
+        }
+
         async function loadLocks() {
-            showStatus('📊 Loading fresh locks...', 'loading');
+            showStatus('📊 Loading fresh predictions...', 'loading');
 
             try {
                 const response = await fetch('/get_locks');
@@ -314,10 +466,10 @@
 
                 if (result.success) {
                     displayLocks(result.locks);
-                    document.getElementById('locksCount').textContent = `${result.count} Lock${result.count !== 1 ? 's' : ''}`;
-                    showStatus(`✅ Found ${result.count} high-confidence picks!`, 'success');
+                    document.getElementById('locksCount').textContent = `${result.count} Prediction${result.count !== 1 ? 's' : ''}`;
+                    showStatus(`✅ Found ${result.count} predictions!`, 'success');
                 } else {
-                    showStatus('❌ Error loading locks', 'error');
+                    showStatus('❌ Error loading predictions', 'error');
                 }
             } catch (error) {
                 showStatus(`❌ Network error: ${error.message}`, 'error');
@@ -330,7 +482,7 @@
             if (locks.length === 0) {
                 content.innerHTML = `
                     <div class="no-locks">
-                        <h3>No locks available today</h3>
+                        <h3>No predictions available today</h3>
                         <p>Analysis runs automatically at midnight - check back later</p>
                     </div>
                 `;
@@ -342,12 +494,12 @@
                     <thead>
                         <tr>
                             <th>Player</th>
+                            <th>Team</th>
                             <th>Stat</th>
                             <th>Line</th>
                             <th>Predicted</th>
                             <th>Pick</th>
-                            <th>Deviation</th>
-                            <th>Confidence</th>
+                            <th>Deviation %</th>
                             <th>Updated</th>
                         </tr>
                     </thead>
@@ -355,12 +507,12 @@
                         ${locks.map(lock => `
                             <tr>
                                 <td class="player-name">${lock.player_name}</td>
+                                <td><span class="team-badge">${lock.team}</span></td>
                                 <td>${lock.stat_type.toUpperCase()}</td>
                                 <td>${lock.line}</td>
                                 <td><strong>${lock.predicted_value.toFixed(1)}</strong></td>
                                 <td><span class="bet-outcome ${lock.bet_outcome.toLowerCase()}">${lock.bet_outcome}</span></td>
-                                <td class="deviation">${lock.deviation_percentage}%</td>
-                                <td><span class="confidence ${lock.confidence.toLowerCase()}">${lock.confidence}</span></td>
+                                <td class="deviation"><strong>${lock.deviation_percentage}%</strong></td>
                                 <td>${new Date(lock.created_at).toLocaleTimeString()}</td>
                             </tr>
                         `).join('')}
@@ -371,12 +523,16 @@
             content.innerHTML = table;
         }
 
-        // Load today's locks on page load and refresh every 30 seconds
+        // Load today's predictions and metrics on page load and refresh every 30 seconds
         document.addEventListener('DOMContentLoaded', function() {
+            loadMetrics();
             loadLocks();
             
-            // Auto-refresh every 30 seconds to show any new picks
-            setInterval(loadLocks, 30000);
+            // Auto-refresh every 30 seconds to show any new predictions and metrics
+            setInterval(() => {
+                loadMetrics();
+                loadLocks();
+            }, 30000);
         });
     </script>
 </body>

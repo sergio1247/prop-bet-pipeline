@@ -5,6 +5,8 @@ import json
 from datetime import datetime, timedelta
 import time
 import uuid
+import sys
+from decimal import Decimal
 
 app = Flask(__name__)
 
@@ -35,10 +37,12 @@ def get_todays_locks():
     """Get first prediction from database for testing"""
     
     try:
+        print("ENTERING get_todays_locks()")
+        sys.stdout.flush()
         conn = get_db_connection()
         cursor = conn.cursor()
         
-        # Simple query to get unique predictions
+        # Simple query to get unique predictions with all Monte Carlo columns, sorted by highest deviation
         query = """
         SELECT DISTINCT
             p.firstname,
@@ -48,26 +52,60 @@ def get_todays_locks():
             pr.predicted_value,
             pr.bet_outcome,
             pr.created_at,
-            pr.deviation_percentage
+            pr.deviation_percentage,
+            pr.team,
+            pr.probability_over,
+            pr.confidence_low,
+            pr.confidence_high,
+            pr.confidence_score,
+            pr.risk_assessment
         FROM predictions pr
         JOIN players p ON pr.personid = p.personid
+        ORDER BY pr.deviation_percentage DESC NULLS LAST
         """
         
         cursor.execute(query)
         results = cursor.fetchall()
+        print(f"FETCHED {len(results)} rows")
         
         locks = []
         for row in results:
-            locks.append({
-                'player_name': f"{row[0]} {row[1]}",
-                'stat_type': row[2],
-                'line': float(row[3]),
-                'predicted_value': float(row[4]),
-                'bet_outcome': row[5].upper(),
-                'created_at': row[6].strftime('%Y-%m-%d %H:%M:%S') if row[6] else None,
-                'deviation_percentage': round(float(row[7]), 1) if row[7] else 0.0,
-                'confidence': 'HIGH' if row[7] and float(row[7]) >= 20 else 'MEDIUM'
-            })
+            try:
+                # Calculate correct bet outcome based on prediction vs line
+                predicted_value = float(row[4])
+                line = float(row[3])
+                bet_outcome = 'OVER' if predicted_value > line else 'UNDER'
+                
+                locks.append({
+                    'player_name': f"{row[0]} {row[1]}",
+                    'stat_type': row[2],
+                    'line': line,
+                    'predicted_value': predicted_value,
+                    'bet_outcome': bet_outcome,
+                    'created_at': row[6].strftime('%Y-%m-%d %H:%M:%S') if row[6] else None,
+                    'deviation_percentage': round(float(row[7]), 1) if row[7] else 0.0,
+                    'team': row[8] if row[8] else 'N/A',
+                    'confidence': 'HIGH' if row[7] and float(row[7]) >= 20 else 'MEDIUM'
+                })
+            except Exception as e:
+                print(f"ERROR processing row {row}: {e}")
+                print(f"Row length: {len(row)}")
+                sys.stdout.flush()
+                # Fallback to basic data only
+                predicted_value = float(row[4])
+                line = float(row[3])
+                bet_outcome = 'OVER' if predicted_value > line else 'UNDER'
+                
+                locks.append({
+                    'player_name': f"{row[0]} {row[1]}",
+                    'stat_type': row[2],
+                    'line': line,
+                    'predicted_value': predicted_value,
+                    'bet_outcome': bet_outcome,
+                    'created_at': row[6].strftime('%Y-%m-%d %H:%M:%S') if row[6] else None,
+                    'deviation_percentage': round(float(row[7]), 1) if row[7] else 0.0,
+                    'confidence': 'HIGH' if row[7] and float(row[7]) >= 20 else 'MEDIUM'
+                })
         
         cursor.close()
         conn.close()
@@ -77,6 +115,55 @@ def get_todays_locks():
     except Exception as e:
         print(f"Database error: {e}")
         return []
+
+def get_processing_metrics():
+    """Get processing metrics from the most recent prediction run"""
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        # Get the most recent run's timing data
+        query = """
+        SELECT 
+            COUNT(*) as total_predictions,
+            MIN(created_at) as run_start,
+            MAX(created_at) as run_end,
+            MAX(processing_time_seconds) as monte_carlo_seconds,
+            MAX(total_processing_time_seconds) as total_processing_seconds,
+            MAX(created_at) as last_run_time
+        FROM predictions 
+        WHERE created_at >= (
+            SELECT MAX(created_at) - INTERVAL '5 minutes' 
+            FROM predictions
+        )
+        """
+        
+        cursor.execute(query)
+        result = cursor.fetchone()
+        
+        cursor.close()
+        conn.close()
+        
+        if result and result[0] > 0:
+            # Handle Decimal type from database
+            monte_carlo_time = float(result[3]) if result[3] is not None else 0
+            total_processing_time = float(result[4]) if result[4] is not None else 0
+            return {
+                'total_predictions': result[0],
+                'run_start': result[1].strftime('%H:%M:%S') if result[1] else None,
+                'run_end': result[2].strftime('%H:%M:%S') if result[2] else None, 
+                'monte_carlo_seconds': round(monte_carlo_time, 2),
+                'total_processing_seconds': round(total_processing_time, 2),
+                'last_run_time': result[5].strftime('%Y-%m-%d %H:%M:%S') if result[5] else None,
+                'monte_carlo_simulations': result[0] * 500000 if result[0] else 0,  # 500k sims per prediction
+                'throughput': round((result[0] * 500000) / max(total_processing_time, 1), 0) if total_processing_time > 0 else 0
+            }
+        else:
+            return None
+            
+    except Exception as e:
+        print(f"Error getting processing metrics: {e}")
+        return None
 
 def get_recent_predictions():
     """Get all recent predictions for debugging"""
@@ -93,14 +180,16 @@ def get_recent_predictions():
             pr.predicted_value,
             pr.bet_outcome,
             pr.created_at,
-            CASE 
-                WHEN pr.predicted_value > pr.line 
-                THEN ((pr.predicted_value - pr.line) / pr.line) * 100
-                ELSE ((pr.line - pr.predicted_value) / pr.line) * 100
-            END as deviation_percentage
+            pr.deviation_percentage,
+            pr.team,
+            pr.probability_over,
+            pr.confidence_low,
+            pr.confidence_high,
+            pr.confidence_score,
+            pr.risk_assessment
         FROM predictions pr
         JOIN players p ON pr.personid = p.personid
-        ORDER BY pr.created_at DESC
+        ORDER BY pr.deviation_percentage DESC NULLS LAST, pr.created_at DESC
         LIMIT 20
         """
         
@@ -109,14 +198,20 @@ def get_recent_predictions():
         
         predictions = []
         for row in results:
+            # Calculate correct bet outcome based on prediction vs line
+            predicted_value = float(row[4])
+            line = float(row[3])
+            bet_outcome = 'OVER' if predicted_value > line else 'UNDER'
+            
             predictions.append({
                 'player_name': f"{row[0]} {row[1]}",
                 'stat_type': row[2],
-                'line': float(row[3]),
-                'predicted_value': float(row[4]),
-                'bet_outcome': row[5].upper(),
+                'line': line,
+                'predicted_value': predicted_value,
+                'bet_outcome': bet_outcome,
                 'created_at': row[6].strftime('%Y-%m-%d %H:%M:%S') if row[6] else None,
-                'deviation_percentage': round(float(row[7]), 1)
+                'deviation_percentage': round(float(row[7]), 1) if row[7] else 0.0,
+                'team': row[8] if row[8] else 'N/A'
             })
         
         cursor.close()
@@ -139,10 +234,27 @@ def index():
 def get_locks():
     """API endpoint to get today's locks (>10% deviation)"""
     locks = get_todays_locks()
+    
+    # Debug: check first lock for new columns
+    if locks:
+        first_lock = locks[0]
+        print(f"DEBUG: First lock keys: {list(first_lock.keys())}")
+        print(f"DEBUG: Has team: {'team' in first_lock}")
+        print(f"DEBUG: Has probability_over: {'probability_over' in first_lock}")
+    
     return jsonify({
         'success': True,
         'locks': locks,
         'count': len(locks)
+    })
+
+@app.route('/get_metrics')
+def get_metrics():
+    """API endpoint to get processing metrics from most recent run"""
+    metrics = get_processing_metrics()
+    return jsonify({
+        'success': True,
+        'metrics': metrics
     })
 
 @app.route('/get_recent_predictions')
